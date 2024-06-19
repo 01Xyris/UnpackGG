@@ -25,6 +25,7 @@ public class GaboonGrabber : Config
 
     public override void Unpack(ModuleDefMD module)
     {
+        // Falling asleep will make better later (maybe)
         if(TYRONE == "True")
         {
             Unpacker.UnpackPayload(module);
