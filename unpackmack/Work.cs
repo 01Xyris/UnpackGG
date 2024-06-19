@@ -70,6 +70,9 @@ public static class Work
         {
             Console.WriteLine($"Resource Name: {resource.Name}");
             Console.WriteLine($"Resource Type: {resource.ResourceType}");
+            if (resource.Name.Contains("Tyrone")){
+                GaboonGrabber.TYRONE = "True";
+            }
 
             if (resource is EmbeddedResource embeddedResource)
             {

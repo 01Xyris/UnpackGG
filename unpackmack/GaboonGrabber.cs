@@ -13,6 +13,7 @@ public class GaboonGrabber : Config
     public static string TEMP => Work.TEMP_KEY;
     public static string KEY1;
     public static string KEY2;
+    public static string TYRONE;
     public static string RES_PATH => Work.RES_PATH;
     public static string TEMP_PATH => Work.TEMP_PATH;
     public override string Name => "GaboonGrabber";
@@ -24,7 +25,13 @@ public class GaboonGrabber : Config
 
     public override void Unpack(ModuleDefMD module)
     {
-        Unpacker.CheckAndPrintMatches();
+        if(TYRONE == "True")
+        {
+            Unpacker.UnpackPayload(module);
+        }
+        else
+        {
+  Unpacker.CheckAndPrintMatches();
         Console.WriteLine("Unpacking GaboonGrabber...");
         Console.WriteLine($"TEMP_PATH -> {TEMP_PATH}");
         string finalFileName = "res3.exe";
@@ -34,6 +41,8 @@ public class GaboonGrabber : Config
 
         var module_res = ModuleDefMD.Load(finalFilePath);
         Unpacker.UnpackPayload(module_res);
+        }
+      
     }
 
     public class Unpacker
@@ -120,13 +129,13 @@ public class GaboonGrabber : Config
 
             string noFuserExOutputPath = Path.Combine(currentFilePath, "NoFuserEx_Output");
 
-            // Load the newly unpacked module
+      
             string unpackedFilePath = Path.Combine(noFuserExOutputPath, "res3.exe");
             Work.SearchResource(ModuleDefMD.Load(unpackedFilePath));
             if (File.Exists(unpackedFilePath))
             {
                 var unpackedModule = ModuleDefMD.Load(unpackedFilePath);
-                SearchFor11CharStrings(unpackedModule);
+                SearchString(unpackedModule);
             }
             else
             {
@@ -134,9 +143,9 @@ public class GaboonGrabber : Config
             }
         }
 
-        private static void SearchFor11CharStrings(ModuleDefMD module)
+        public static void SearchString(ModuleDefMD module)
         {
-            string pattern = @"[a-zA-Z0-9]{11}"; 
+            string pattern = @"[a-zA-Z0-9]{11}";  
             Console.WriteLine($"RES_PATH: {RES_PATH} ");
             foreach (var type in module.GetTypes())
             {
