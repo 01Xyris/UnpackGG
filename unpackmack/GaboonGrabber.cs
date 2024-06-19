@@ -136,7 +136,7 @@ public class GaboonGrabber : Config
 
         private static void SearchFor11CharStrings(ModuleDefMD module)
         {
-            string pattern = @"[a-zA-Z0-9]{11}";  // Regex pattern to match exactly 11-character strings
+            string pattern = @"[a-zA-Z0-9]{11}"; 
             Console.WriteLine($"RES_PATH: {RES_PATH} ");
             foreach (var type in module.GetTypes())
             {
