@@ -8,4 +8,4 @@ make sure folder Output, Res exist
 ## Credits
 [NoFuserEx](https://github.com/undebel/NoFuserEx) 
 
-[dnlib]([https://github.com/undebel/NoFuserEx](https://github.com/0xd4d/dnlib)
+[dnlib](https://github.com/0xd4d/dnlib)
