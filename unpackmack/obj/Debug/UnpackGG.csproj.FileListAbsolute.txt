@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\unpackmack\unpackmack\bin\Debug\UnpackGG.exe.config
+C:\Users\admin\source\repos\unpackmack\unpackmack\bin\Debug\UnpackGG.exe
+C:\Users\admin\source\repos\unpackmack\unpackmack\bin\Debug\UnpackGG.pdb
+C:\Users\admin\source\repos\unpackmack\unpackmack\bin\Debug\dnlib.dll
+C:\Users\admin\source\repos\unpackmack\unpackmack\bin\Debug\dnlib.xml
+C:\Users\admin\source\repos\unpackmack\unpackmack\obj\Debug\UnpackGG.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\unpackmack\unpackmack\obj\Debug\UnpackGG.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\unpackmack\unpackmack\obj\Debug\UnpackGG.csproj.Up2Date
+C:\Users\admin\source\repos\unpackmack\unpackmack\obj\Debug\UnpackGG.exe
+C:\Users\admin\source\repos\unpackmack\unpackmack\obj\Debug\UnpackGG.pdb
